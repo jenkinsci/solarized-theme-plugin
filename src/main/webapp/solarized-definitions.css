@@ -1,0 +1,134 @@
+:root {
+  --primary: var(--solarized-emphasized);
+  --background: var(--solarized-bg);
+  --very-light-grey: var(--solarized-bg-highlights);
+  --light-grey: var(--solarized-bg-highlights);
+  --medium-grey: var(--solarized-bg-highlights);
+  --btn-primary-color: var(--solarized-blue);
+  --light-bg-color: var(--solarized-bg-highlights);
+
+  /* Text */
+  --text-color: var(--solarized-primary);
+  --text-color-secondary: var(--solarized-secondary);
+  --call-to-action-text-color: var(--solarized-emphasized);
+  --call-to-action-link-color: var(--solarized-blue);
+
+  /* Alerts */
+  --alert-success-text-color: #fff;
+  --alert-success-bg-color: #007e33;
+  --alert-success-border-color: var(--alert-success-bg-color);
+  --alert-info-text-color: var(--solarized-secondary);
+  --alert-info-bg-color: var(--solarized-bg-highlights);
+  --alert-info-border-color: var(--alert-info-bg-color);
+  --alert-warning-text-color: #fff;
+  --alert-warning-bg-color: var(--solarized-yellow);
+  --alert-warning-border-color: var(--alert-warning-bg-color);
+  --alert-danger-text-color: #fff;
+  --alert-danger-bg-color: var(--solarized-red);
+  --alert-danger-border-color: var(--alert-danger-bg-color);
+
+  --danger: var(--solarized-red);
+
+  /* Buttons */
+  --btn-primary-bg: var(--solarized-violet);
+  --btn-primary-bg-hover: var(--solarized-blue);
+  --btn-secondary-bg: var(--solarized-bg-highlights);
+  --btn-secondary-color: var(--btn-primary-color);
+  --btn-link-bg--hover: var(--solarized-bg-highlights);
+  --btn-link-bg--active: var(--solarized-bg-highlights);
+
+  /* Help area */
+  --help-area-bg-color: var(--solarized-bg-highlights);
+  --configure-job-help-area-bg-color: var(--solarized-bg-highlights);
+
+  /* Header */
+  --logo-bg: var(--solarized-bg-highlights);
+  --brand-link-color: var(--solarized-primary);
+  --header-bg-v2: var(--solarized-secondary);
+  --header-link-color: var(--text-color);
+  --header-link-color-active: var(--text-color);
+  --search-bg: var(--solarized-bg-highlights);
+  --search-input-color: var(--text-color);
+
+  /* Breadcrumbs */
+  --breadcrumbs-bg: var(--solarized-bg-highlights);
+  --breadcrumbs-bg-color--hover: var(--solarized-bg);
+  --breadcrumbs-text-color: var(--text-color);
+  --breadcrumbs-item-bg-color--hover: var(--solarized-bg-highlights);
+  --breadcrumbs-border: var(--solarized-bg-highlights);
+
+  /* Links */
+  --link-color: var(--solarized-blue);
+  --link-visited-color: var(--solarized-magenta);
+
+  /* Table */
+  --bigtable-header-bg: var(--solarized-bg-highlights);
+  --bigtable-header-border-color: var(--solarized-bg-highlights);
+  --bigtable-header-text-color: var(--text-color);
+  --bigtable-row-border-color: var(--solarized-bg-highlights);
+  --even-row-color: #020202;
+  --table-striped-bg--hover: var(--solarized-bg-highlights);
+
+  /* Pane widget */
+  --pane-border-color: var(--solarized-bg-highlights);
+  --pane-header-border-color: var(--solarized-bg-highlights);
+  --pane-header-color: var(--solarized-bg-highlights);
+
+  /* Tab bar widget */
+  --tab-link-border-color: var(--solarized-bg-highlights);
+  --tab-link-text-color: #999;
+  --tab-link-checked-bg: var(--solarized-bg);
+  --tab-link-checked-text-color: var(--primary);
+  --tab-link-bg--hover: var(--solarized-bg-highlights);
+  --tab-link-bg--active: var(--solarized-bg-highlights);
+
+  /* Side panel */
+  --panel-header-bg-color: var(--solarized-bg);
+  --panel-border-color: var(--solarized-bg-highlights);
+  --panel-border-color--hover: var(--solarized-bg-highlights);
+  --task-link-bg-color--hover: var(--solarized-bg-highlights);
+
+  /* Form */
+  --input-color: var(--solarized-bg-highlights);
+  --input-border: var(--solarized-bg-highlights);
+  --header-search-border: var(--solarized-bg-highlights);
+  --input-hidden-password-bg-color: var(--input-color);
+
+  /* Text area handle */
+  --text-area-handle-border: var(--solarized-bg-highlights);
+  --text-area-handle-bg-color: var(--text-area-handle-border);
+
+  /* Pop out menus */
+  --menu-bg-color: var(--solarized-bg-highlights);
+  --menu-text-color: var(--primary);
+  --menu-selected-color: var(--solarized-bg-highlights);
+  --menu-box-shadow: none;
+
+  /* Manage component */
+  --manage-option-bg-color--hover: var(--solarized-bg-highlights);
+  --manage-option-bg-color--active: var(--solarized-bg-highlights);
+  --manage-option-border-color: var(--solarized-bg-highlights);
+
+  /* Add form widget */
+  --light-bg-color: var(--solarized-bg-highlights);
+  --light-bg-color--hover: var(--solarized-bg);
+  --bright-bg-color: var(--solarized-bg-highlights);
+  --brightest-bg-color: var(--input-color);
+  --add-item-btn-decorator-border-color: var(--solarized-bg-highlights);
+  --add-item-categories-bg-color--hover: var(--solarized-bg-highlights);
+  --add-item-btn-decorator-bg-color: var(--solarized-bg-highlights);
+  --configure-job-bottom-sticker-bg-color: var(--solarized-bg-highlights);
+  --configure-job-bottom-sticker-border-color: var(--solarized-bg-highlights);
+
+  /* Plugin manager */
+  --plugin-manager-bg-color-already-upgraded: var(--solarized-secondary);
+  --plugin-manager-category-link-bg-color: #5d5b5b;
+  --plugin-manager-category-link-bg-color--hover: var(--solarized-bg-highlights);
+  --plugin-manager-category-link-border-color--hover: var(--solarized-bg);
+  --plugin-manager-category-text-color: var(--text-color);
+  --plugin-manager-category-link-color--hover: #a5a3a3;
+  --plugin-manager-unavailable-bg-color: var(--solarized-secondary);
+
+  /* Auto complete */
+  --auto-complete-bg-color--prehighlight: var(--solarized-primary);
+}

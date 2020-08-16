@@ -8,6 +8,8 @@ import org.kohsuke.stapler.DataBoundConstructor;
 
 public class SolarizedSystemTheme extends AbstractSolarizedTheme {
 
+    public static final String CSS = "solarized-system.css";
+
     @DataBoundConstructor
     public SolarizedSystemTheme() {
         // Stapler
@@ -15,7 +17,7 @@ public class SolarizedSystemTheme extends AbstractSolarizedTheme {
 
     @Override
     public String getCssUrl() {
-        return "solarized-system.css";
+        return CSS;
     }
 
     @Extension

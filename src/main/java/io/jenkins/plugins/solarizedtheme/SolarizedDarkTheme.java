@@ -8,6 +8,8 @@ import org.kohsuke.stapler.DataBoundConstructor;
 
 public class SolarizedDarkTheme extends AbstractSolarizedTheme {
 
+    public static final String CSS = "solarized-dark.css";
+
     @DataBoundConstructor
     public SolarizedDarkTheme() {
         // Stapler
@@ -15,7 +17,7 @@ public class SolarizedDarkTheme extends AbstractSolarizedTheme {
 
     @Override
     public String getCssUrl() {
-        return "solarized-dark.css";
+        return CSS;
     }
 
     @Extension

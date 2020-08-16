@@ -1,6 +1,7 @@
 package io.jenkins.plugins.solarizedtheme;
 
 import hudson.Extension;
+import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
 import jenkins.model.Jenkins;
 import org.kohsuke.stapler.StaplerRequest;
@@ -9,10 +10,12 @@ import org.kohsuke.stapler.StaplerResponse;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Objects;
 
 @Extension
 public class SolarizedRootAction implements UnprotectedRootAction {
+
+    public static final String URL_NAME = "solarized-theme";
+
     @Override
     public String getIconFileName() {
         return null; /* no UI */
@@ -25,7 +28,7 @@ public class SolarizedRootAction implements UnprotectedRootAction {
 
     @Override
     public String getUrlName() {
-        return "solarized-theme";
+        return URL_NAME;
     }
 
     public void doDynamic(StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {
@@ -37,6 +40,11 @@ public class SolarizedRootAction implements UnprotectedRootAction {
             rsp.sendError(404);
             return;
         }
-        Objects.requireNonNull(Jenkins.get().getPlugin("solarized-theme")).doDynamic(req, rsp);
+        final Plugin plugin = Jenkins.get().getPlugin("solarized-theme");
+        if (plugin == null) {
+            rsp.sendError(404);
+            return;
+        }
+        plugin.doDynamic(req, rsp);
     }
 }

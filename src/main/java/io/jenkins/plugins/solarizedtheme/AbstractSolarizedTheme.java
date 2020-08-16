@@ -17,6 +17,6 @@ public abstract class AbstractSolarizedTheme extends ThemeManagerFactory {
     }
 
     private static String toPluginUrl(String file) {
-        return Jenkins.get().getRootUrl() + "solarized-theme/" + file;
+        return Jenkins.get().getRootUrl() + SolarizedRootAction.URL_NAME + "/" + file;
     }
 }

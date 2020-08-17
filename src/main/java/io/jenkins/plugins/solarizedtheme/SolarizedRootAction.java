@@ -14,7 +14,7 @@ import java.util.Arrays;
 @Extension
 public class SolarizedRootAction implements UnprotectedRootAction {
 
-    public static final String URL_NAME = "solarized-theme";
+    public static final String URL_NAME = "theme-" + AbstractSolarizedThemeDescriptor.ID;
 
     @Override
     public String getIconFileName() {

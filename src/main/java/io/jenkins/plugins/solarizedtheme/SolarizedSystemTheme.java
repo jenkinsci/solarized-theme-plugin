@@ -15,17 +15,17 @@ public class SolarizedSystemTheme extends AbstractSolarizedTheme {
         // Stapler
     }
 
-    @Override
-    public String getCssUrl() {
-        return CSS;
-    }
-
     @Extension
     @Symbol("solarizedSystem")
     public static class DescriptorImpl extends AbstractSolarizedThemeDescriptor {
         @Override
         public ThemeManagerFactory getInstance() {
             return new SolarizedSystemTheme();
+        }
+
+        @Override
+        public String getThemeCssSuffix() {
+            return CSS;
         }
 
         @NonNull

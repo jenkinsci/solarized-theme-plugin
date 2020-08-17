@@ -13,7 +13,7 @@ public abstract class AbstractSolarizedTheme extends ThemeManagerFactory {
 
     @Override
     public Theme getTheme() {
-        return Theme.builder().withCssUrls(Arrays.asList(toPluginUrl(BASE_CSS), toPluginUrl(getCssUrl()), toPluginUrl(DEFINITIONS_CSS))).build();
+        return Theme.builder().withCssUrls(Arrays.asList(toPluginUrl(BASE_CSS), getCssUrl(), toPluginUrl(DEFINITIONS_CSS))).build();
     }
 
     private static String toPluginUrl(String file) {

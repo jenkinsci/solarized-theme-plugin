@@ -1,0 +1,49 @@
+= Solarized Theme Plugin
+
+== Introduction
+
+This plugin provides Solarized (Light and Dark) themes for Jenkins.
+
+Learn more about the Solarized color scheme https://ethanschoonover.com/solarized[on its website].
+
+== Screenshots
+
+[cols="1a,1a,1a"]
+|===
+| List View | Job Configuration | Manage Jenkins
+
+| [link=images/light-view.png]
+image::images/light-view.png["Solarized (Light) List View",260]
+| [link=images/light-config.png]
+image::images/light-config.png["Solarized (Light) Job Configuration",260]
+| [link=images/light-manage.png]
+image::images/light-manage.png["Solarized (Light) Manage Jenkins",260]
+
+| [link=images/dark-view.png]
+image::images/dark-view.png["Solarized (Dark) List View",260]
+| [link=images/dark-config.png]
+image::images/dark-config.png["Solarized (Dark) Job Configuration",260]
+| [link=images/dark-manage.png]
+image::images/dark-manage.png["Solarized (Dark) Manage Jenkins",260]
+|===
+
+== Getting started
+
+After installing this plugin, go to _Manage Jenkins » Configure System » Built-In Themes_ and select one of the Solarized themes listed there:
+
+* Solarized (System), which will be light or dark depending on user preference.
+* Solarized Dark, which will be dark for all users
+* Solarized Light, which will be light for all users
+
+== Issues
+
+Report issues and enhancements in the https://issues.jenkins-ci.org[Jenkins issue tracker].
+
+== Contributing
+
+Refer to our https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md[contribution guidelines].
+
+== LICENSE
+
+Licensed under MIT, see link:LICENSE.md[LICENSE]
+

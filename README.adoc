@@ -6,6 +6,8 @@ This plugin provides Solarized (Light and Dark) themes for Jenkins.
 
 Learn more about the Solarized color scheme https://ethanschoonover.com/solarized[on its website].
 
+IMPORTANT: This plugin is still an early work in progress. Jenkins isn't quite as themeable as we would like yet, so some things will not look as expected. Help in developing this theme, and Jenkins theming support in general, would be appreciated.
+
 == Screenshots
 
 [cols="1a,1a,1a"]
@@ -35,15 +37,11 @@ After installing this plugin, go to _Manage Jenkins » Configure System » Built
 * Solarized Dark, which will be dark for all users
 * Solarized Light, which will be light for all users
 
-== Issues
-
-Report issues and enhancements in the https://issues.jenkins-ci.org[Jenkins issue tracker].
-
 == Contributing
 
 Refer to our https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md[contribution guidelines].
 
 == LICENSE
 
-Licensed under MIT, see link:LICENSE.md[LICENSE]
+Licensed under MIT, see link:LICENSE.md[LICENSE].
 

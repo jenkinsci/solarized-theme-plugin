@@ -13,10 +13,6 @@ public abstract class AbstractSolarizedTheme extends ThemeManagerFactory {
 
     @Override
     public Theme getTheme() {
-        return Theme.builder().withCssUrls(Arrays.asList(toPluginUrl(BASE_CSS), getCssUrl(), toPluginUrl(DEFINITIONS_CSS))).build();
-    }
-
-    private static String toPluginUrl(String file) {
-        return Jenkins.get().getRootUrl() + SolarizedRootAction.URL_NAME + "/" + file;
+        return Theme.builder().withCssUrls(Arrays.asList(toAssetUrl(BASE_CSS), getCssUrl(), toAssetUrl(DEFINITIONS_CSS))).build();
     }
 }

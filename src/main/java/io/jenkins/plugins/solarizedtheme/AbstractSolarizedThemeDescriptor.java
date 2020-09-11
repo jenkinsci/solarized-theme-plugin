@@ -1,6 +1,5 @@
 package io.jenkins.plugins.solarizedtheme;
 
-import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import io.jenkins.plugins.thememanager.ThemeManagerFactoryDescriptor;
 
 public abstract class AbstractSolarizedThemeDescriptor extends ThemeManagerFactoryDescriptor {

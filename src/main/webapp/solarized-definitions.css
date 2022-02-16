@@ -1,4 +1,4 @@
-:root {
+[data-theme=solarized], .app-theme-picker__picker[data-theme=solarized], [data-theme=solarized-dark], .app-theme-picker__picker[data-theme=solarized-dark], [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
   --add-item-btn-decorator-bg-color: var(--solarized-bg-highlights);                                                    /* background color of the area around the "OK" button on "New Item" dialog */
   --add-item-btn-decorator-border-color: var(--solarized-bg-highlights);                                                /* border color of the area around the "OK" button on "New Item" dialog */
   --alert-danger-bg-color: var(--solarized-red);

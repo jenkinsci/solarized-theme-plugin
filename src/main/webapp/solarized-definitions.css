@@ -71,7 +71,7 @@
   /* --font-size-monospace */                                                                                           /* not a color */
   /* --font-size-sm */                                                                                                  /* not a color */
   /* --font-size-xs */                                                                                                  /* not a color */
-  /* --header-bg-classic */
+  --header-bg-classic: #000;
   --header-bg-v2: var(--solarized-secondary);
   /* --header-item-border-radius */
   /* --header-link-bg-active-v2 */

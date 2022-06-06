@@ -43,7 +43,7 @@
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
             <artifactId>theme-manager</artifactId>
-            <version>0.5</version>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 

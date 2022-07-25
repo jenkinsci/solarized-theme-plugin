@@ -170,6 +170,7 @@
   /* --tab-baseline-width */
   /* --tab-link-bg */
   --tabs-background: var(--solarized-bg-highlights);
+  --tabs-item-background--selected: var(--background);
   --tab-link-bg--active: var(--solarized-bg-highlights);
   --tab-link-bg--hover: var(--solarized-bg-highlights);
   /* --tab-link-border-color--active */

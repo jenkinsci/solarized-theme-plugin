@@ -33,11 +33,8 @@
   /* --brand-link-color-active-v2 */                                                                                    /* TODO this is a color */
   /* --brand-link-color-hover-v2 */                                                                                     /* TODO this is a color */
   --brand-link-color: var(--solarized-primary);
-  --breadcrumbs-bg-color--hover: var(--solarized-bg);
-  --breadcrumbs-bg: var(--solarized-bg-highlights);
-  --breadcrumbs-border: var(--solarized-bg-highlights);
-  --breadcrumbs-item-bg-color--hover: var(--solarized-bg-highlights);
-  --breadcrumbs-text-color: var(--solarized-blue);
+  --breadcrumbs-bar-background: var(--solarized-bg-highlights);
+  --footer-background: var(--solarized-bg-highlights);
   --bright-bg-color: var(--solarized-bg);                                                                               /* Used for both active tab background color, and general form background color on Jenkins 2.0 style forms */
   --brightest-bg-color: var(--solarized-bg-highlights);
   --btn-link-bg--active: var(--solarized-bg-highlights);
@@ -151,10 +148,10 @@
   --panel-header-bg-color: var(--solarized-bg);
   --plugin-manager-bg-color-already-upgraded: var(--solarized-secondary);
   --plugin-manager-category-link-bg-color--hover: var(--solarized-bg-highlights);
-  --plugin-manager-category-link-bg-color var(--solarized-bg);
+  --plugin-manager-category-link-bg-color: var(--solarized-bg);
   --plugin-manager-category-link-border-color: var(--solarized-secondary);
   --plugin-manager-category-link-border-color--hover: var(--solarized-primary);
-  --plugin-manager-category-link-color--hover var(--solarized-bg-highlights);
+  --plugin-manager-category-link-color--hover: var(--solarized-bg-highlights);
   --plugin-manager-category-text-color: var(--solarized-primary);
   --plugin-manager-unavailable-bg-color: var(--solarized-secondary);
   /* --primary-active */
@@ -172,6 +169,7 @@
   /* --tab-baseline-default-display */
   /* --tab-baseline-width */
   /* --tab-link-bg */
+  --tabs-background: var(--solarized-bg-highlights);
   --tab-link-bg--active: var(--solarized-bg-highlights);
   --tab-link-bg--hover: var(--solarized-bg-highlights);
   /* --tab-link-border-color--active */
@@ -189,6 +187,10 @@
   /* --tab-link-text-color--hover */
   --tab-link-text-color: #999;                                                                                          /* TODO solarize */
   /* --table-parameters-bg--hover */
+  --table-background: var(--solarized-bg-highlights);
+  --table-header-foreground: var(--text-color);
+  --table-body-background: var(--background);
+  --table-body-foreground: var(--text-color);
   --table-striped-bg--hover: var(--solarized-bg-highlights);
   /* --task-link-bg-color--active */
   --task-link-bg-color--hover: var(--solarized-bg-highlights);

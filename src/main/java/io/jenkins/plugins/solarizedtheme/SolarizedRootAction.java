@@ -36,7 +36,7 @@ public class SolarizedRootAction implements UnprotectedRootAction {
         if (cssFile.startsWith("/")) {
             cssFile = cssFile.substring(1);
         }
-        if (!Arrays.asList(AbstractSolarizedTheme.BASE_CSS, AbstractSolarizedTheme.DEFINITIONS_CSS, SolarizedSystemTheme.CSS, SolarizedLightTheme.CSS, SolarizedDarkTheme.CSS).contains(cssFile)) {
+        if (!Arrays.asList(AbstractSolarizedTheme.BASE_CSS, AbstractSolarizedTheme.DEFINITIONS_CSS, SolarizedLightTheme.CSS, SolarizedDarkTheme.CSS).contains(cssFile)) {
             rsp.sendError(404);
             return;
         }

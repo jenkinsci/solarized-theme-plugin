@@ -10,4 +10,9 @@ public abstract class AbstractSolarizedThemeDescriptor extends ThemeManagerFacto
     public String getThemeId() {
         return ID;
     }
+
+    @Override
+    public boolean isNamespaced() {
+        return true;
+    }
 }

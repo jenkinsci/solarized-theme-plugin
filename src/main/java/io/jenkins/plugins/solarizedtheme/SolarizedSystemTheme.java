@@ -2,30 +2,35 @@ package io.jenkins.plugins.solarizedtheme;
 
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.Extension;
+import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 public class SolarizedSystemTheme extends AbstractSolarizedTheme {
 
-    public static final String CSS = "solarized-system.css";
-
     @DataBoundConstructor
     public SolarizedSystemTheme() {
         // Stapler
     }
 
+    @Override
+    public Theme getTheme() {
+        return Theme.builder().build();
+    }
+
     @Extension
     @Symbol("solarizedSystem")
     public static class DescriptorImpl extends AbstractSolarizedThemeDescriptor {
+
         @Override
-        public ThemeManagerFactory getInstance() {
-            return new SolarizedSystemTheme();
+        public String getThemeKey() {
+            return "solarized-system";
         }
 
         @Override
-        public String getThemeCssSuffix() {
-            return CSS;
+        public ThemeManagerFactory getInstance() {
+            return new SolarizedSystemTheme();
         }
 
         @NonNull

@@ -1,7 +1,17 @@
-:root {
+[data-theme=solarized-dark], .app-theme-picker__picker[data-theme=solarized-dark] {
   --solarized-emphasized: var(--solarized-base1);
   --solarized-primary: var(--solarized-base0);
   --solarized-secondary: var(--solarized-base01);
   --solarized-bg-highlights: var(--solarized-base02);
   --solarized-bg: var(--solarized-base03);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
+    --solarized-emphasized: var(--solarized-base1);
+    --solarized-primary: var(--solarized-base0);
+    --solarized-secondary: var(--solarized-base01);
+    --solarized-bg-highlights: var(--solarized-base02);
+    --solarized-bg: var(--solarized-base03);
+  }
 }

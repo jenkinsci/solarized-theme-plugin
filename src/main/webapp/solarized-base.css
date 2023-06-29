@@ -19,7 +19,7 @@ cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
 green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 */
 
-:root {
+[data-theme=solarized], .app-theme-picker__picker[data-theme=solarized], [data-theme=solarized-dark], .app-theme-picker__picker[data-theme=solarized-dark], [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
   --solarized-base03:  #002b36;
   --solarized-base02:  #073642;
   --solarized-base01:  #586e75;

@@ -2,7 +2,6 @@ package io.jenkins.plugins.solarizedtheme;
 
 import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
-import jenkins.model.Jenkins;
 
 import java.util.Arrays;
 

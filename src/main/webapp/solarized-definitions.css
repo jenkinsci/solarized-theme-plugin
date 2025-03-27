@@ -1,4 +1,4 @@
-:root {
+[data-theme=solarized], .app-theme-picker__picker[data-theme=solarized], [data-theme=solarized-dark], .app-theme-picker__picker[data-theme=solarized-dark], [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
   --background: var(--solarized-bg);
 
   /* Text */

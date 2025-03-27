@@ -1,4 +1,4 @@
-:root {
+[data-theme=solarized], .app-theme-picker__picker[data-theme=solarized] {
   --solarized-bg: var(--solarized-base3);
   --solarized-primary: var(--solarized-base01);
   --solarized-secondary: var(--solarized-base0);
@@ -13,4 +13,23 @@
   --blue:    #0072d4;
   --cyan:    #009c8f;
   --green:   #489100;
+}
+
+@media (prefers-color-scheme: light) {
+  [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
+    --solarized-bg: var(--solarized-base3);
+    --solarized-primary: var(--solarized-base01);
+    --solarized-secondary: var(--solarized-base0);
+    --solarized-card: var(--solarized-bg);
+
+    /* Colors */
+    --yellow:  #ad8900;
+    --orange:  #c25d1e;
+    --red:     #d2212d;
+    --magenta: #ca4898;
+    --violet:  #8762c6;
+    --blue:    #0072d4;
+    --cyan:    #009c8f;
+    --green:   #489100;
+  }
 }

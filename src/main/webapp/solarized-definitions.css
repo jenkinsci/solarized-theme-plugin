@@ -36,10 +36,6 @@
   --input-color: oklch(from var(--text-color-secondary) l c h / 0.03);
   --input-border: oklch(from var(--text-color-secondary) l c h / 0.3);
   --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.4);
-  --focus-input-glow: oklch(from var(--focus-input-border) l c h / 0.2);
-
-  /* Plugin manager */
-  --plugin-manager-bg-color-already-upgraded: var(--dark-theme-bg-medium);
 
   /* Default button */
   --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);

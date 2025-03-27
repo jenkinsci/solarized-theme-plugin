@@ -1,7 +1,9 @@
 :root {
-  --solarized-emphasized: var(--solarized-base1);
-  --solarized-primary: var(--solarized-base0);
-  --solarized-secondary: var(--solarized-base01);
-  --solarized-bg-highlights: var(--solarized-base02);
   --solarized-bg: var(--solarized-base03);
+  --solarized-primary: var(--solarized-base3);
+  --solarized-secondary: var(--solarized-base1);
+  --solarized-card: var(--solarized-base02);
+
+  /* Render native browser elements in dark mode */
+  color-scheme: dark;
 }

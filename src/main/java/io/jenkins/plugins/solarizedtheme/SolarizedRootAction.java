@@ -4,10 +4,10 @@ import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
 import jenkins.model.Jenkins;
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
+import org.kohsuke.stapler.StaplerRequest2;
+import org.kohsuke.stapler.StaplerResponse2;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -31,7 +31,7 @@ public class SolarizedRootAction implements UnprotectedRootAction {
         return URL_NAME;
     }
 
-    public void doDynamic(StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {
+    public void doDynamic(StaplerRequest2 req, StaplerResponse2 rsp) throws IOException, ServletException {
         String cssFile = req.getRestOfPath();
         if (cssFile.startsWith("/")) {
             cssFile = cssFile.substring(1);

@@ -22,4 +22,14 @@
 
   /* Render native browser elements in dark mode */
   color-scheme: dark;
+
+  /* Colors */
+  --yellow:  #dbb32d;
+  --orange:  #ed8649;
+  --red:     #fa5750;
+  --magenta: #f275be;
+  --violet:  #af88eb;
+  --blue:    #4695f7;
+  --cyan:    #41c7b9;
+  --green:   #75b938;
 }

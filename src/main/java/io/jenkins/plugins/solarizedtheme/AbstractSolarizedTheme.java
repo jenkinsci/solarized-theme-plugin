@@ -2,8 +2,6 @@ package io.jenkins.plugins.solarizedtheme;
 
 import io.jenkins.plugins.thememanager.Theme;
 import io.jenkins.plugins.thememanager.ThemeManagerFactory;
-import jenkins.model.Jenkins;
-
 import java.util.Arrays;
 
 public abstract class AbstractSolarizedTheme extends ThemeManagerFactory {
@@ -13,6 +11,8 @@ public abstract class AbstractSolarizedTheme extends ThemeManagerFactory {
 
     @Override
     public Theme getTheme() {
-        return Theme.builder().withCssUrls(Arrays.asList(toAssetUrl(BASE_CSS), getCssUrl(), toAssetUrl(DEFINITIONS_CSS))).build();
+        return Theme.builder()
+                .withCssUrls(Arrays.asList(toAssetUrl(BASE_CSS), getCssUrl(), toAssetUrl(DEFINITIONS_CSS)))
+                .build();
     }
 }

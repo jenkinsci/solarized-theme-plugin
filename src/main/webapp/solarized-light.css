@@ -2,5 +2,5 @@
   --solarized-bg: var(--solarized-base3);
   --solarized-primary: var(--solarized-base01);
   --solarized-secondary: var(--solarized-base0);
-  --solarized-card: var(--solarized-base3);
+  --solarized-card: var(--solarized-bg);
 }

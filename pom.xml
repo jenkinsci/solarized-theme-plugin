@@ -51,12 +51,11 @@
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
             <artifactId>theme-manager</artifactId>
-            <version>262.vc57ee4a_eda_5d</version>
         </dependency>
     </dependencies>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
         <tag>${scmTag}</tag>

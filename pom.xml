@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.10</version>
+        <version>4.88</version>
         <relativePath />
     </parent>
     <groupId>io.jenkins.plugins</groupId>
@@ -14,8 +14,9 @@
     <properties>
         <revision>0.2</revision>
         <changelist>-SNAPSHOT</changelist>
-        <jenkins.version>2.248</jenkins.version>
-        <java.level>8</java.level>
+        <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+        <jenkins.baseline>2.462</jenkins.baseline>
+        <jenkins.version>${jenkins.baseline}.3</jenkins.version>
         <useBeta>true</useBeta>
     </properties>
     <name>Solarized Theme Plugin</name>
@@ -24,8 +25,8 @@
         <dependencies>
             <dependency>
                 <groupId>io.jenkins.tools.bom</groupId>
-                <artifactId>bom-2.235.x</artifactId>
-                <version>13</version>
+                <artifactId>bom-${jenkins.baseline}.x</artifactId>
+                <version>4228.v0a_71308d905b_</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -43,12 +44,11 @@
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
             <artifactId>theme-manager</artifactId>
-            <version>0.5</version>
         </dependency>
     </dependencies>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
         <tag>${scmTag}</tag>

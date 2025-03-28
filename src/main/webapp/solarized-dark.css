@@ -20,6 +20,11 @@
       0 0 1px 1px rgba(0, 0, 20, 0.025),
       0 10px 20px rgba(0, 0, 20, 0.3);
 
+  /* Tab bar */
+  --tabs-item-background--selected: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
+
   /* Render native browser elements in dark mode */
   color-scheme: dark;
 
@@ -56,6 +61,11 @@
         0 0 8px 2px rgba(0, 0, 20, 0.05),
         0 0 1px 1px rgba(0, 0, 20, 0.025),
         0 10px 20px rgba(0, 0, 20, 0.3);
+
+    /* Tab bar */
+    --tabs-item-background--selected: oklch(
+        from var(--text-color-secondary) l c h / 0.175
+    );
 
     /* Render native browser elements in dark mode */
     color-scheme: dark;

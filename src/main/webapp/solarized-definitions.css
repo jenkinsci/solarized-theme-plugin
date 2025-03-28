@@ -5,12 +5,12 @@
   --text-color: var(--solarized-primary);
   --text-color-secondary: var(--solarized-secondary);
 
+  /* Breadcrumbs - Deprecated */
+  --breadcrumbs-bar-background: var(--background);
+
   /* Table */
   --table-background: var(--card-border-color);
   --table-border-color: var(--card-border-color);
-
-  /* Tab bar */
-  --tabs-item-background--selected: var(--background);
 
   /* Side panel */
   --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--card-background));

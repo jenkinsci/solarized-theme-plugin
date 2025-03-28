@@ -2,7 +2,6 @@
 
 [![Build Status](https://ci.jenkins.io/job/Plugins/job/solarized-theme-plugin/job/master/badge/icon)](https://ci.jenkins.io/job/Plugins/job/solarized-theme-plugin/job/master/)
 [![Gitter](https://badges.gitter.im/jenkinsci/ux-sig.svg)](https://gitter.im/jenkinsci/ux-sig?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Changelog](https://img.shields.io/github/release/jenkinsci/solarized-theme-plugin.svg?label=changelog)](https://github.com/jenkinsci/solarized-theme-plugin/releases/)
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/solarized-theme.svg)](https://plugins.jenkins.io/solarized-theme)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/solarized-theme.svg?color=blue)](https://plugins.jenkins.io/solarized-theme)
 

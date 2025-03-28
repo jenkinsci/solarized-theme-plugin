@@ -11,7 +11,7 @@
 
 This plugin provides Solarized (Light and Dark) themes for Jenkins.
 
-Learn more about the Solarized color scheme https://ethanschoonover.com/solarized[on its website].
+Learn more about the Solarized color scheme on [Ethan Schoonover's website](https://ethanschoonover.com/solarized).
 
 ## Usage
 

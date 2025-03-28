@@ -8,6 +8,9 @@
   /* Breadcrumbs - Deprecated */
   --breadcrumbs-bar-background: var(--background);
 
+  /* Tabs - Deprecated */
+  --tabs-background: var(--card-border-color);
+
   /* Table */
   --table-background: var(--card-border-color);
   --table-border-color: var(--card-border-color);

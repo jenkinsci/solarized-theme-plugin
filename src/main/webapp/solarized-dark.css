@@ -1,7 +1,83 @@
-:root {
-  --solarized-emphasized: var(--solarized-base1);
-  --solarized-primary: var(--solarized-base0);
-  --solarized-secondary: var(--solarized-base01);
-  --solarized-bg-highlights: var(--solarized-base02);
+[data-theme=solarized-dark], .app-theme-picker__picker[data-theme=solarized-dark] {
   --solarized-bg: var(--solarized-base03);
+  --solarized-primary: var(--solarized-base3);
+  --solarized-secondary: var(--solarized-base1);
+  --solarized-card: var(--solarized-base02);
+
+  /* Tooltips */
+  --tooltip-box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+      inset var(--jenkins-border--subtle-shadow),
+      0 0 8px 2px rgba(0, 0, 20, 0.05),
+      0 0 1px 1px rgba(0, 0, 20, 0.025),
+      0 10px 20px rgba(0, 0, 20, 0.2);
+
+  /* Dropdowns */
+  --dropdown-box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+      inset var(--jenkins-border--subtle-shadow),
+      0 0 8px 2px rgba(0, 0, 20, 0.05),
+      0 0 1px 1px rgba(0, 0, 20, 0.025),
+      0 10px 20px rgba(0, 0, 20, 0.3);
+
+  /* Tab bar */
+  --tabs-item-background--selected: oklch(
+      from var(--text-color-secondary) l c h / 0.175
+  );
+
+  /* Render native browser elements in dark mode */
+  color-scheme: dark;
+
+  /* Colors */
+  --yellow:  #dbb32d;
+  --orange:  #ed8649;
+  --red:     #fa5750;
+  --magenta: #f275be;
+  --violet:  #af88eb;
+  --blue:    #4695f7;
+  --cyan:    #41c7b9;
+  --green:   #75b938;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme=solarized-system], .app-theme-picker__picker[data-theme=solarized-system] {
+    --solarized-bg: var(--solarized-base03);
+    --solarized-primary: var(--solarized-base3);
+    --solarized-secondary: var(--solarized-base1);
+    --solarized-card: var(--solarized-base02);
+
+    /* Tooltips */
+    --tooltip-box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+        inset var(--jenkins-border--subtle-shadow),
+        0 0 8px 2px rgba(0, 0, 20, 0.05),
+        0 0 1px 1px rgba(0, 0, 20, 0.025),
+        0 10px 20px rgba(0, 0, 20, 0.2);
+
+    /* Dropdowns */
+    --dropdown-box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+        inset var(--jenkins-border--subtle-shadow),
+        0 0 8px 2px rgba(0, 0, 20, 0.05),
+        0 0 1px 1px rgba(0, 0, 20, 0.025),
+        0 10px 20px rgba(0, 0, 20, 0.3);
+
+    /* Tab bar */
+    --tabs-item-background--selected: oklch(
+        from var(--text-color-secondary) l c h / 0.175
+    );
+
+    /* Render native browser elements in dark mode */
+    color-scheme: dark;
+
+    /* Colors */
+    --yellow:  #dbb32d;
+    --orange:  #ed8649;
+    --red:     #fa5750;
+    --magenta: #f275be;
+    --violet:  #af88eb;
+    --blue:    #4695f7;
+    --cyan:    #41c7b9;
+    --green:   #75b938;
+  }
 }

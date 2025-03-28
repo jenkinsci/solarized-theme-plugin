@@ -3,13 +3,12 @@ package io.jenkins.plugins.solarizedtheme;
 import hudson.Extension;
 import hudson.Plugin;
 import hudson.model.UnprotectedRootAction;
-import jenkins.model.Jenkins;
-import org.kohsuke.stapler.StaplerRequest2;
-import org.kohsuke.stapler.StaplerResponse2;
-
 import jakarta.servlet.ServletException;
 import java.io.IOException;
 import java.util.Arrays;
+import jenkins.model.Jenkins;
+import org.kohsuke.stapler.StaplerRequest2;
+import org.kohsuke.stapler.StaplerResponse2;
 
 @Extension
 public class SolarizedRootAction implements UnprotectedRootAction {
@@ -36,7 +35,12 @@ public class SolarizedRootAction implements UnprotectedRootAction {
         if (cssFile.startsWith("/")) {
             cssFile = cssFile.substring(1);
         }
-        if (!Arrays.asList(AbstractSolarizedTheme.BASE_CSS, AbstractSolarizedTheme.DEFINITIONS_CSS, SolarizedSystemTheme.CSS, SolarizedLightTheme.CSS, SolarizedDarkTheme.CSS).contains(cssFile)) {
+        if (!Arrays.asList(
+                        AbstractSolarizedTheme.BASE_CSS,
+                        AbstractSolarizedTheme.DEFINITIONS_CSS,
+                        SolarizedLightTheme.CSS,
+                        SolarizedDarkTheme.CSS)
+                .contains(cssFile)) {
             rsp.sendError(404);
             return;
         }

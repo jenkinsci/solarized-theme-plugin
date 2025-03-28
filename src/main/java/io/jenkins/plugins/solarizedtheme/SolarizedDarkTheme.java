@@ -18,9 +18,15 @@ public class SolarizedDarkTheme extends AbstractSolarizedTheme {
     @Extension
     @Symbol("solarizedDark")
     public static class DescriptorImpl extends AbstractSolarizedThemeDescriptor {
+
+        @Override
+        public String getThemeKey() {
+            return "solarized-dark";
+        }
+
         @Override
         public ThemeManagerFactory getInstance() {
-            return new SolarizedLightTheme();
+            return new SolarizedDarkTheme();
         }
 
         @Override

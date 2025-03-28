@@ -5,6 +5,8 @@
 [![Jenkins Plugin](https://img.shields.io/jenkins/plugin/v/solarized-theme.svg)](https://plugins.jenkins.io/solarized-theme)
 [![Jenkins Plugin Installs](https://img.shields.io/jenkins/plugin/i/solarized-theme.svg?color=blue)](https://plugins.jenkins.io/solarized-theme)
 
+![preview.png](preview.png)
+
 ## Introduction
 
 This plugin provides Solarized (Light and Dark) themes for Jenkins.

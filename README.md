@@ -23,8 +23,8 @@ After installing this plugin, go to _Manage Jenkins » Appearance » Themes_ and
 
 ## Contributing
 
-Refer to our https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md[contribution guidelines].
+Refer to our [contribution guidelines](https://github.com/jenkinsci/.github/blob/master/CONTRIBUTING.md).
 
 ## LICENSE
 
-Licensed under MIT, see link:LICENSE.md[LICENSE].
+Licensed under MIT, see [LICENSE](LICENSE.md).

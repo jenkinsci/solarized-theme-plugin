@@ -45,4 +45,26 @@
   /* Card */
   --card-background: var(--solarized-card);
   --card-border-color: color-mix(in oklch, var(--text-color-secondary) 10%, var(--card-background));
+
+  /* Colors */
+  --light-blue: oklch(from var(--blue) calc(l + 0.2) c h);
+  --dark-blue: oklch(from var(--blue) calc(l - 0.2) c h);
+  --light-brown: oklch(from var(--brown) calc(l + 0.2) c h);
+  --dark-brown: oklch(from var(--brown) calc(l - 0.2) c h);
+  --light-cyan: oklch(from var(--cyan) calc(l + 0.2) c h);
+  --dark-cyan: oklch(from var(--cyan) calc(l - 0.2) c h);
+  --light-green: oklch(from var(--green) calc(l + 0.2) c h);
+  --dark-green: oklch(from var(--green) calc(l - 0.2) c h);
+  --light-indigo: oklch(from var(--indigo) calc(l + 0.2) c h);
+  --dark-indigo: oklch(from var(--indigo) calc(l - 0.2) c h);
+  --light-orange: oklch(from var(--orange) calc(l + 0.2) c h);
+  --dark-orange: oklch(from var(--orange) calc(l - 0.2) c h);
+  --light-pink: oklch(from var(--pink) calc(l + 0.2) c h);
+  --dark-pink: oklch(from var(--pink) calc(l - 0.2) c h);
+  --light-purple: oklch(from var(--purple) calc(l + 0.2) c h);
+  --dark-purple: oklch(from var(--purple) calc(l - 0.2) c h);
+  --light-red: oklch(from var(--red) calc(l + 0.2) c h);
+  --dark-red: oklch(from var(--red) calc(l - 0.2) c h);
+  --light-yellow: oklch(from var(--yellow) calc(l + 0.2) c h);
+  --dark-yellow: oklch(from var(--yellow) calc(l - 0.2) c h);
 }

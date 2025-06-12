@@ -10,19 +10,18 @@
   --breadcrumbs-bar-background: var(--background);
 
   /* Tabs - Deprecated */
-  --tabs-background: var(--card-border-color);
+  --tabs-background: var(--table-background);
 
   /* Table */
-  --table-background: var(--card-border-color);
-  --table-border-color: var(--card-border-color);
+  --table-background: color-mix(in srgb, var(--background) 92.5%, var(--text-color-secondary));
 
   /* Side panel */
-  --panel-border-color: color-mix(in oklch, var(--text-color-secondary) 15%, var(--card-background));
+  --panel-border-color: color-mix(in srgb, var(--text-color-secondary) 15%, var(--card-background));
 
   /* Form */
-  --input-color: oklch(from var(--text-color-secondary) l c h / 0.03);
-  --input-border: oklch(from var(--text-color-secondary) l c h / 0.3);
-  --input-border-hover: oklch(from var(--text-color-secondary) l c h / 0.4);
+  --input-color: color-mix(in srgb, var(--text-color-secondary) 3%, var(--background));
+  --input-border: color-mix(in srgb, var(--text-color-secondary) 30%, var(--background));
+  --input-border-hover: color-mix(in srgb, var(--text-color-secondary) 40%, var(--background));
 
   /* Default button */
   --button-background: oklch(from var(--text-color-secondary) l c h / 0.075);
@@ -45,7 +44,23 @@
 
   /* Card */
   --card-background: var(--solarized-card);
-  --card-border-color: color-mix(in oklch, var(--text-color-secondary) 10%, var(--card-background));
+  --card-border-color: color-mix(in srgb, var(--text-color-secondary) 12.5%, var(--card-background));
+
+  /* This should be removed when core usees '--card-border-color' for tabs */
+  .tabBar {
+    &::before {
+      border: var(--jenkins-border-width) solid var(--card-border-color);
+    }
+  }
+
+  /* This should be removed when core usees '--card-border-color' for tables */
+  .jenkins-table {
+    @supports (not (-moz-appearance: none)) {
+      &::before {
+        border: var(--jenkins-border-width) solid var(--card-border-color);
+      }
+    }
+  }
 
   /* Colors */
   --light-blue: oklch(from var(--blue) calc(l + 0.2) c h);

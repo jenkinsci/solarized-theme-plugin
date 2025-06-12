@@ -4,6 +4,9 @@
   --solarized-secondary: var(--solarized-base1);
   --solarized-card: var(--solarized-base02);
 
+  /* Table */
+  --table-background: var(--card-background);
+
   /* Tooltips */
   --tooltip-box-shadow:
       inset 0 0 0 1px rgba(255, 255, 255, 0.025),
@@ -21,9 +24,7 @@
       0 10px 20px rgba(0, 0, 20, 0.3);
 
   /* Tab bar */
-  --tabs-item-background--selected: oklch(
-      from var(--text-color-secondary) l c h / 0.175
-  );
+  --tabs-item-background--selected: var(--card-border-color);
 
   /* Render native browser elements in dark mode */
   color-scheme: dark;
@@ -46,6 +47,9 @@
     --solarized-secondary: var(--solarized-base1);
     --solarized-card: var(--solarized-base02);
 
+    /* Table */
+    --table-background: var(--card-background);
+
     /* Tooltips */
     --tooltip-box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.025),
@@ -63,9 +67,7 @@
         0 10px 20px rgba(0, 0, 20, 0.3);
 
     /* Tab bar */
-    --tabs-item-background--selected: oklch(
-        from var(--text-color-secondary) l c h / 0.175
-    );
+    --tabs-item-background--selected: var(--card-border-color);
 
     /* Render native browser elements in dark mode */
     color-scheme: dark;

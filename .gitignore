@@ -8,7 +8,9 @@
 /*.iml
 /*.iws
 /*.ipr
-/.idea/
+.idea/*
+!.idea/icon.svg
+*.iml
 
 # Eclipse project files
 .settings

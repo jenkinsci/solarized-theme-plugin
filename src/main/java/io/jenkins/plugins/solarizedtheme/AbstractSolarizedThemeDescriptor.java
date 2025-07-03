@@ -15,4 +15,9 @@ public abstract class AbstractSolarizedThemeDescriptor extends ThemeManagerFacto
     public boolean isNamespaced() {
         return true;
     }
+
+    @Override
+    public String getIconClassName() {
+        return "symbol-solarized plugin-solarized-theme";
+    }
 }

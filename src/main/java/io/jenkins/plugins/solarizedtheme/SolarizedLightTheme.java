@@ -37,7 +37,7 @@ public class SolarizedLightTheme extends AbstractSolarizedTheme {
         @NonNull
         @Override
         public String getDisplayName() {
-            return "Solarized Light"; // TODO i18n?
+            return "Solarized Light";
         }
     }
 }

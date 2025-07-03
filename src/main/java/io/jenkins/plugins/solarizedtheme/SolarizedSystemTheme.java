@@ -38,5 +38,10 @@ public class SolarizedSystemTheme extends AbstractSolarizedTheme {
         public String getDisplayName() {
             return "Solarized (System)"; // TODO i18n?
         }
+
+        @Override
+        public String getIconClassName() {
+            return "symbol-moon-outline plugin-ionicons-api";
+        }
     }
 }

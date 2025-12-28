@@ -4,16 +4,26 @@
     "github>jenkinsci/renovate-config"
   ],
   "automerge": true,
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<node.version>(?<currentValue>.*?)<\/node.version>"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<node.version>(?<currentValue>.*?)</node.version>"
+      ],
       "depNameTemplate": "node",
       "datasourceTemplate": "npm"
     },
     {
-      "fileMatch": ["pom.xml"],
-      "matchStrings": ["<npm.version>(?<currentValue>.*?)<\/npm.version>"],
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/pom.xml/"
+      ],
+      "matchStrings": [
+        "<npm.version>(?<currentValue>.*?)</npm.version>"
+      ],
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }

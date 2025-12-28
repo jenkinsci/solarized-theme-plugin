@@ -1,25 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":semanticCommitsDisabled",
-    "schedule:monthly"
-  ],
-  "reviewers": [
-    "team:sig-ux"
+    "github>jenkinsci/renovate-config"
   ],
   "automerge": true,
-  "packageRules": [
-    {
-      "matchDatasources": ["npm"],
-      "addLabels": ["javascript"],
-      "stabilityDays": 3
-    },
-    {
-      "matchPackageNames": ["node"],
-      "allowedVersions": "/22.[0-9]+.[0-9]+(.[0-9]+)?$/"
-    }
-  ],
   "regexManagers": [
     {
       "fileMatch": ["pom.xml"],
@@ -33,9 +17,5 @@
       "depNameTemplate": "npm",
       "datasourceTemplate": "npm"
     }
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "rebaseWhen": "conflicted"
+  ]
 }

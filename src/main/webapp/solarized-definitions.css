@@ -44,23 +44,6 @@
 
   /* Card */
   --card-background: var(--solarized-card);
-  --card-border-color: color-mix(in srgb, var(--text-color-secondary) 12.5%, var(--card-background));
-
-  /* This should be removed when core usees '--card-border-color' for tabs */
-  .tabBar {
-    &::before {
-      border: var(--jenkins-border-width) solid var(--card-border-color);
-    }
-  }
-
-  /* This should be removed when core usees '--card-border-color' for tables */
-  .jenkins-table {
-    @supports (not (-moz-appearance: none)) {
-      &::before {
-        border: var(--jenkins-border-width) solid var(--card-border-color);
-      }
-    }
-  }
 
   /* Colors */
   --light-blue: oklch(from var(--blue) calc(l + 0.2) c h);
